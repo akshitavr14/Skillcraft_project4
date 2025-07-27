@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Great Vibes", cursive;
+}
+
+body {
+  background: linear-gradient(135deg, #f3e7ff, #fde9ec);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fef7ff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 500px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.date-day {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  text-align: right;
+  font-size: 20px;
+  color: #6d2c91;
+  line-height: 1.4;
+}
+
+.title {
+  font-size: 42px;
+  color: #7b2cbf;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.date-inputs {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.date-inputs input,
+.date-inputs button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+.date-inputs button {
+  background-color: #8e44ad;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #f3edf7;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.todo-input button {
+  background-color: #7b2cbf;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background-color: #5e1d94;
+}
+
+#taskList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#taskList li {
+  background: #f0e1ff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.task-left input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.task-left span {
+  font-size: 18px;
+  color: #4d3060;
+}
+
+.task-left .done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.task-buttons button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #7b2cbf;
+  cursor: pointer;
+}
+
+.task-buttons button:hover {
+  color: #c44569;
+}
+
+.task-left input.edit-field {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
